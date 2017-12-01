@@ -1,0 +1,83 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+  margin-top: -25px;
+}
+
+
+.App-Header {
+  background-color: #000;
+  padding-left: 20px;
+  color: #fff;
+  cursor: default;
+}
+
+.App-Content {
+  padding: 0px 20px 20px 20px;
+}
+
+.App-Header-Logo {
+  text-align: left;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.App-Header-Nav  {
+  color: #fff;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.Nav-Item {
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  display: inline-block;
+  width: 100px;
+  }
+  
+  .Nav-Item > a {
+    color: #fff;
+  }
+
+.Nav-Item-Active {
+  border-style: solid;
+  border-width: 5px 0px 0px 0px;
+  border-color: #46B0DA;
+  background-color: #2E2E2E;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+
+.Nav-Item-Active::before {
+  content: "";
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 21px;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  border-color: #fff transparent;
+  display: block;
+}
+
+.App-Footer {  
+  position:fixed;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#F0F0F0;
+}
+.App-footer {
+  position: fixed;
+  bottom: 0; 
+  padding: 10px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
