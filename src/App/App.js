@@ -4,6 +4,7 @@ import Home from '../Home/Home';
 import Data from '../Data/Data';
 import './App.css';
 
+
 class App extends Component {
   render() {
     return (
