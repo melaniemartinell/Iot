@@ -6,6 +6,22 @@ import ReactTable from 'react-table';
 import 'react-table/react-table.css'
 
 class Data extends Component {
+  componentDidMount(){
+    const serialport = require('serialport');
+    const portName = '/dev/ttyACM0';
+    const sp = new serialport.SerialPort(portName, {
+        baudRate: 9600,
+        dataBits: 8,
+        parity: 'none',
+        stopBits: 1,
+        flowControl: false,
+        parser: serialport.parsers.readline("\r\n")
+    });
+    
+    sp.on('data', function(input) {
+        console.log(input);
+    });
+  }
   render() {
     return (
       <AppContent className="Data">
