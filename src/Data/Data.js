@@ -45,20 +45,31 @@ class ShowData extends React.Component{
     var tdSensor = {
       padding: '10px'
     };
+
+    //set the values here!
+    var soil = 1;
+    var temp = 2;
+    var humid = 3;
+    var water = 4;
+
     return(
       <div>
         <table style={tableSensor}>
         <tr style={trSensor}>
+          <th style={thSensor}>Soil Moisture Sensor:</th>
+          <td style={tdSensor} >{soil}</td>
+        </tr>
+        <tr style={trSensor}>
+          <th style={thSensor}>Temperature Sensor:</th>
+          <td style={tdSensor}>{temp}</td>
+        </tr>
+        <tr style={trSensor}>
+          <th style={thSensor}>Humidity Sensor:</th>
+          <td style={tdSensor}>{humid}</td>
+        </tr>
+        <tr style={trSensor}>
           <th style={thSensor}>Water Sensor:</th>
-          <td style={tdSensor}>60</td>
-        </tr>
-        <tr style={trSensor}>
-          <th style={thSensor}>Moisture Sensor:</th>
-          <td style={tdSensor}>54</td>
-        </tr>
-        <tr style={trSensor}>
-          <th style={thSensor}>Air Sensor:</th>
-          <td style={tdSensor}>66</td>
+          <td style={tdSensor}>{water}</td>
         </tr>
       </table>
       

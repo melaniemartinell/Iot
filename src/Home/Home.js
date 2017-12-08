@@ -16,8 +16,11 @@ class Home extends Component {
         <div style={{padding: '30px', width: '70%', textAlign: 'center', border: '10px solid black', backgroundColor: '#F4F4F4'}}>
         <img src={frog} style={{height: '200px', width: '200px', border: '2px solid black'}} alt="logo"/>
           <div style={{marginTop: '15px'}}>
-            <button style={{padding: '20px', width: '200px', backgroundColor: '#DCD0C0', }}>
-              <Link to={'Data'} style={{color: 'white'}}>  <span style={{color: 'white', fontSize: '20px'}}> Current Data </span> </Link>
+            <button style={{padding: '10px', width: '95px', backgroundColor: '#DCD0C0', }}>
+              <Link to={'Data'} style={{color: 'white'}}>  <span style={{color: 'white', fontSize: '15px'}}> Data </span> </Link>
+            </button>
+            <button style={{marginLeft: '10px',padding: '10px', width: '95px', backgroundColor: '#DCD0C0', }}>
+               <span style={{color: 'white', fontSize: '15px'}}> Feed Frog </span>
             </button>
           </div>
         </div>
